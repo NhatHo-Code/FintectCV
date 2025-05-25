@@ -122,3 +122,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed("#intro4", {
+    strings: [
+        "You may also know me as Min Ho",
+      "You may also know me as Lee Min Ho",
+      "You may also know me as Minh Nhat",
+      "I can be a Web Developer",
+      "I can be a Graphic Designer",
+      "I can also be a Pianist"
+    ],
+    typeSpeed: 110,
+    backSpeed: 60,
+    loop: true
+  });
+});
