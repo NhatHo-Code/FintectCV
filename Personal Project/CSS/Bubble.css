@@ -1,0 +1,82 @@
+     .frame-label {
+            grid-column: 1;
+            grid-row: 2 / span 3;
+            writing-mode: vertical-rl;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .bubble {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            position: relative;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .bubble:hover {
+            transform: scale(1.2);
+        }
+
+        .bubble:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            transition: opacity 0.3s ease;
+            font-size: 14px;
+        }
+
+        .bubble-set-1{
+            display: flex;
+            max-width: 300vh;
+            justify-content: center;
+            margin-top: 5vh;
+            gap: 27vh; ;
+            font-size: 3vh;
+        }
+       
+         #bubble3{
+            margin-right: 5vh
+        }.bubble-set-2{
+            display: flex;
+            max-width: 300vh;
+            justify-content: center;
+            margin-top: 5vh;
+            gap: 27vh; ;
+            font-size: 3vh;
+        }
+       
+         #bubble6{
+            margin-right: 5vh
+        }
+         .bubble-set-3{
+            display: flex;
+            max-width: 300vh;
+            justify-content: center;
+            margin-top: 5vh;
+            gap: 27vh; ;
+            font-size: 3vh;
+        }
+       
+         #bubble9{
+            margin-right: 5vh
+        }

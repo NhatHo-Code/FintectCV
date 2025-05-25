@@ -1,0 +1,84 @@
+.card {
+  width: 200px;
+  height: 250px;
+  margin: 1rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.card-front {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.card-back {
+  background: #d4af37;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.Book-List {
+  display: flex;
+}
+
+
+#Book1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+#Book1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale image to cover the container while maintaining aspect ratio */
+  border-radius: 0.5rem; /* Match the card's border radius */
+}
+#Book2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+#Book2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale image to cover the container while maintaining aspect ratio */
+  border-radius: 0.5rem; /* Match the card's border radius */
+}
+#Book3 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+#Book3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale image to cover the container while maintaining aspect ratio */
+  border-radius: 0.5rem; /* Match the card's border radius */
+}

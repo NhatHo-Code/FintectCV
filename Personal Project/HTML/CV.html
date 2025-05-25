@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  
+  <title>Document</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../CSS/nav.css" />
+  <link rel="stylesheet" href="../CSS/header.css" />
+  <link rel="stylesheet" href="../CSS/footer.css" />
+  <link rel="stylesheet" href="../CSS/Info.css" />
+  <link rel="stylesheet" href="../CSS/Bubble.css" />
+  <link rel="stylesheet" href="../CSS/ReadingList.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="#Introduction">About</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#Resource">Resource</a></li>
+      <li><a href="#Interest">Interest</a></li>
+    </ul>
+  </nav>
+  <br />
+
+  <!-- Header -->
+  <header>
+    <div class="sign-container">
+      <div id="Introduction">
+        <div id="header-content">
+          <h1 class="slide-left" id="intro1">Hello my name is:</h1>
+          <h1 class="slide-right" id="intro2">Ho Nguyen Minh Nhat</h1>
+          <br />
+          <h1 class="slide-left delay" id="intro3">
+            I like to combine logical thinking, creativity, and adaptability to build things and myself.
+          </h1>
+          <h1 class="slide-right delay" id="intro4">You may also know me as Min Ho</h1>
+          <br /><br /><br /><br />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Image Container -->
+    <div class="image-container">
+      <div class="image-wrapper">
+        <br /><br />
+        <div class="cross1 top-left"></div>
+        <img src="/IMG/image.jpg" alt="Piano" id="me" class="zoom-image" />
+        <br /><br /><br />
+        <div class="cross2 bottom-right"></div>
+      </div>
+    </div>
+
+    <!-- Skills, Hobbies, Education -->
+    <div class="container" id="Interest">
+      <div class="header-container">
+        <div class="header-skills-header">Skills</div>
+        <div class="header-hobby-header">Hobby</div>
+        <div class="header-experience-header">Education</div>
+      </div>
+
+      <div class="bubble-container">
+
+        <!-- Bubble Set 1 -->
+        <div class="bubble-set-1">
+          <div class="bubble bubble-1" id="bubble1" style="background-image: url('/IMG/Skills/Coding.jpg');">
+            <div class="tooltip">Coding</div>
+          </div>
+          <div class="bubble bubble-2" id="bubble2" style="background-image: url('/IMG/Skills/Gym.jpg');">
+            <div class="tooltip">Gym</div>
+          </div>
+          <div class="bubble bubble-3" id="bubble3" style="background-image: url('/IMG/Skills/VietAnhSchool.webp');">
+            <div class="tooltip">Viet Anh School</div>
+          </div>
+        </div>
+
+        <!-- Bubble Set 2 -->
+        <div class="bubble-set-2">
+          <div class="bubble bubble-4" id="bubble4" style="background-image: url('/IMG/Skills/Crypto.jpg');">
+            <div class="tooltip">Crypto trading</div>
+          </div>
+          <div class="bubble bubble-5" id="bubble5" style="background-image: url('/IMG/Skills/Piano.jpg');">
+            <div class="tooltip">Piano</div>
+          </div>
+          <div class="bubble bubble-6" id="bubble6" style="background-image: url('/IMG/Skills/Petrusky.jpg');">
+            <div class="tooltip">Petrusky High School</div>
+          </div>
+        </div>
+
+        <!-- Bubble Set 3 -->
+        <div class="bubble-set-3">
+          <div class="bubble bubble-7" id="bubble7" style="background-image: url('/IMG/Skills/Designing.jpg');">
+            <div class="tooltip">Designing</div>
+          </div>
+          <div class="bubble bubble-8" id="bubble8" style="background-image: url('/IMG/Skills/Reading.jpg');">
+            <div class="tooltip">Reading</div>
+          </div>
+          <div class="bubble bubble-9" id="bubble9" style="background-image: url('/IMG/Skills/RMIT.jpg');">
+            <div class="tooltip">RMIT University</div>
+          </div>
+        </div>
+
+      </div>
+      <br /><br />
+    </div>
+
+    <!-- Progress Bars -->
+    <div class="progress-container">
+      <div class="progress-label" id="current-goal-label">Previous Goal</div>
+      <div class="progress-bar" id="current-progress"></div>
+      <div class="progress-label" id="goal-label">Goal</div>
+      <div class="progress-bar" id="goal-progress"></div>
+    </div>
+    <br /><br />
+
+    <!-- Reading List -->
+    <div class="Reading-Label">Reading List</div>
+    <div class="Book-List" id="Resource">
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="Book1">
+            <img src="/IMG/Books/AtomicHabit.jpg" />
+          </div>
+          <div class="card-back">
+            Rating: ⭐⭐⭐⭐<br />
+            Progress: Finished
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="Book2">
+            <img src="/IMG/Books/HTWFAIP.jpg" />
+          </div>
+          <div class="card-back">
+            Rating: None<br />
+            Progress: On going
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="Book3">
+            <img src="/IMG/Books/PsychhlogyOfMoney.jpg" />
+          </div>
+          <div class="card-back">
+            Rating: None<br />
+            Progress: None
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br /><br />
+
+    <!-- Footer -->
+    <footer class="footer" id="Contact">
+      <div class="social-icons">
+        <a href="https://github.com/NhatHo-Code" target="_blank">
+          <img src="/IMG/Icon/github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/hồ-nguyễn-minh-nhật-2455b2320" target="_blank">
+          <img src="/IMG/Icon/003-linkedin-1.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/minhnhat.hn/" target="_blank">
+          <img src="/IMG/Icon/001-instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+  /* General header styles */
+  header {
+    color: white;
+    font-family: 'Inknut Antiqua', serif;
+  }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+  /* Text layout container */
+
+
+  /* Header content block */
+  #header-content h1:nth-of-type(1) {
+    margin-top: 80px;
+    line-height: 1.6vh;
+    font-family: 'Merriweather', serif;
+    margin-left: 35vh;
+    letter-spacing: 0.8vh;
+  }
+  #header-content h1:nth-of-type(2) {
+    
+    line-height: 1.6vh;
+    font-family: 'Merriweather', serif;
+    float: right;
+    margin-right: 35vh;
+    letter-spacing: 0.8vh;
+    color: #DDB946;
+  }
+  #header-content h1:nth-of-type(3) {
+    font-size: 3vh;
+    width: 35vw;
+    margin-top: 80px;
+    line-height: 6vh;
+    font-family: 'Merriweather', serif;
+    margin-left: 35vh;
+    letter-spacing: 0.3vh;
+  }
+  #header-content h1:nth-of-type(4) {
+    line-height: 1.6vh;
+    font-family: 'Merriweather', serif;
+    float: right;
+    margin-right: 35vh;
+    letter-spacing: 0.8vh;
+    color: #DDB946;
+  }
+  .image-container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
+
+  .zoom-image {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    transform: scale(0);
+    opacity: 0;
+  }
+  /* Cross base style */
+
+  .cross1 {
+    position: absolute;
+    width: 20px;   /* Larger for visibility */
+    height: 40px;
+  }
+  .cross2 {
+    position: absolute;
+    width: 70px;   /* Larger for visibility */
+    height: 60px;
+  }
+
+
+  .cross1::before,
+  .cross1::after {
+    content: '';
+    position: absolute;
+    background-color: #DDB946;
+    border-radius: 1px;
+  }
+
+  /* Horizontal line */
+  .cross1::before {
+    width: 40px;   /* Same as .cross width */
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  /* Vertical line */
+  .cross1::after {
+    width: 3px;
+    height: 40px;  /* Same as .cross height */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cross2::before,
+  .cross2::after {
+    content: '';
+    position: absolute;
+    background-color: #DDB946;
+    border-radius: 1px;
+  }
+
+  /* Horizontal line */
+  .cross2::before {
+    width: 40px;   /* Same as .cross width */
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  /* Vertical line */
+  .cross2::after {
+    width: 3px;
+    height: 40px;  /* Same as .cross height */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Placement */
+  .top-left {
+    top: -13px;
+    left: 420px;
+  }
+
+  .bottom-right {
+    bottom: -20px;
+    right: 400px;
+  }
+  .cross1 {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 0.5s forwards ease-out;
+    animation-delay: 0.3s;
+  }
+  .cross2 {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 0.5s forwards ease-out;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
